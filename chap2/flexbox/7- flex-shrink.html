@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Flexbox - Axes</title>
+    <style>
+        #content {
+            display: flex;
+            width: 100%;
+        }
+
+        #content div {
+            flex-basis: 120px;
+            border: 3px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .box {
+            flex-shrink: 1;
+        }
+
+        .box1 {
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+<body>
+<p>A,B,C ont flex-shrink: 1. D et E ont flex-shrink: 4.</p>
+<div id="content">
+    <div class="box" style="background-color:red;">A</div>
+    <div class="box" style="background-color:lightblue;">B</div>
+    <div class="box" style="background-color:yellow;">C</div>
+    <div class="box1" style="background-color:brown;">D</div>
+    <div class="box1" style="background-color:lightgreen;">E</div>
+</div>
+
+</body>
+</html>

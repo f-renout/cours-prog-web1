@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Flexbox - Axes</title>
+    <style>
+        div div {
+            border: 1px solid black;
+            color:white;
+        }
+        div div:nth-child(even){
+            background: blue;
+        }
+        div div:nth-child(odd){
+            background: red;
+        }
+        .box {
+            border: 5px solid green;
+            padding: 5px;
+            width : 150px;
+            height : 200px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div style="margin-top: 5px;">Un</div>
+    <div style="order: 7">Deux</div>
+    <div style="order: 4">Trois</div>
+    <div style="order: 1">Quatre</div>
+    <div style="order: 2">Cinq</div>
+    <div style="order: 9">Six</div>
+    <div style="order: 9">Sept</div>
+    <div style="order: 5">Huit</div>
+    <div style="order: 6">Neuf</div>
+</div>
+</body>
+</html>

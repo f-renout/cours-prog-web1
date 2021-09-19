@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        input:invalid+.validity:after {
+            position: absolute; content: '✖';
+            padding-left: 5px;
+            color: #8b0000;
+        }
+
+        input:valid+.validity:after {
+            position: absolute;
+            content: '✓';
+            padding-left: 5px;
+            color: #009000;
+        }
+
+        input[type="number"] {
+            width: 100px;
+        }
+
+        input + span {
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
+<h2>demo entities</h2>
+<form action=".">
+    <div>
+        <label for="tel">Merci de saisir votre numéro de téléphone</label>
+        <input type="tel" id ="tel" required/>
+        <span class="validity"></span>
+    </div>
+    <div>
+        <label for="mail">Merci de saisir votre mail</label>
+        <input id="mail" type="email" placeholder="misterx@example.com">
+        <span class="validity"></span>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Veuillez sélectionner vos centres intérêts</legend>
+            <div>
+                <input type="checkbox" id="coding" name="interest" value="coding" checked>
+                <label for="coding">Développement</label>
+            </div>
+            <div>
+                <input type="checkbox" id="music" name="interest" value="music">
+                <label for="music">Musique</label>
+            </div>
+            <div>
+                <input type="checkbox" id="art" name="interest" value="art">
+                <label for="art">Art</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sports" name="interest" value="sports">
+                <label for="sports">Sports</label>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <fieldset>
+            <p>Quel est le moyen de transport le plus approprié à Strasbourg :</p>
+            <div>
+                <input type="radio" id="contactChoice1"
+                       name="contact" value="piéton" checked>
+                <label for="contactChoice1">Via pedibus</label>
+
+                <input type="radio" id="contactChoice2"
+                       name="contact" value="CTS">
+                <label for="contactChoice2">Transport en commun</label>
+
+                <input type="radio" id="contactChoice3"
+                       name="contact" value="vélo">
+                <label for="contactChoice3">Vélo</label>
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <label for="bday">Veuillez saisir votre date de naissance :</label>
+        <input type="date" id="bday" name="bday">
+    </div>
+    <input type="submit"/>
+</form>
+</body>
+</html>
