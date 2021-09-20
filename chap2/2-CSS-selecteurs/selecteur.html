@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        li {
+            list-style-type: square;
+        }
+
+        /*frere adjacent
+        les ul qui suivent les div avec dic=v2 comme classe
+        */
+        div.div2 + ul {
+            background-color: beige;
+        }
+
+        /*frere général
+        tous les span qui suivent un p
+         */
+        p ~ span {
+            color: red;
+        }
+
+        /*
+        tous les li qui sont enfant direct d'un ul avec master comme classe
+         */
+        ul.master >li {
+            list-style-type: decimal-leading-zero;
+        }
+
+        /*descendants
+        les li qui sont descendant de li
+        */
+        li li {
+            list-style-type: circle;
+        }
+
+    </style>
+</head>
+<body>
+<ul class="master">
+    <li>
+        <div>Enumération1</div>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+        </ul>
+    </li>
+    <li>
+        <div class="div2">Enumération 2</div>
+        <ul>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+    </li>
+</ul>
+<span>Ici, ce n'est pas rouge.</span>
+<p>Attention c'est la qu'on démarre la détection.</p>
+<code>Un peu de code.</code>
+<span>Une span qui va suivre le p.</span>
+<code>Encore du code</code>
+<span>Et un 2eme span</span>
+<cite>une citation</cite>
+<span>Et devinez mon tag...</span>
+</body>
+</html>

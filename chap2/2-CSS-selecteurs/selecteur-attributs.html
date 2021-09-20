@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        /*
+        les champ avec type egal à text
+         */
+        [type="text"] {
+            border: 1px solid red;
+        }
+
+        /*
+        les champ avec href qui contient le mot en
+        (séparé par des espaces ou au debut/fin)
+         */
+        a[href*="date" i] {
+            background-color: darkgray;
+        }
+
+        /*
+        les champ avec href qui contient date (insensitif)
+         */
+        a[href*="date" i] {
+            color: pink;
+        }
+
+        /*
+        les champ avec hreflang egal fr ou fr-*
+         */
+        a[hreflang|="fr" i] {
+            border: 3px dashed black;
+        }
+
+        /*
+        les champ avec href commencant par #
+         */
+        a[href^="#" i]:hover {
+            background-color: black;
+            color:white;
+        }
+
+
+        /* Liens qui finissent ".org" */
+        a[href$=".org"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<label for="text">Texte</label>
+<input type="text" id="text"/>
+<label for="date">Calendrier</label>
+<input type="date" id="date"/>
+<ul>
+    <li><a href="#teXt" hreflang="fi en de">ancre locale vers l'input texte</a></li>
+    <li><a href="http://example.com"  hreflang="fr-BE">Lien d'exemple</a></li>
+    <li><a href="#dAtE" hreflang="fr">ancre local vers l'input date</a></li>
+    <li><a href="http://example.org">Lien vers example.org</a></li>
+</ul>
+</body>
+</html>
