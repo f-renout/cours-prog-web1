@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        span.inner {
+            background-color: yellow;
+        }
+
+        div{
+            display: inline-block;
+        }
+        div.outer {
+            background-color: green;
+        }
+
+        div.inner {
+            background-color: lightgrey;
+            /*top right bottom left*/
+            padding: 20px 30px 10px 0px;
+            border: 3px solid black;
+            margin: 1em 2em 3em 4em;
+        }
+    </style>
+</head>
+<body>
+<h2>demo entities</h2>
+<div class="outer">
+    <div class="inner"><span class="inner">blabla</span>
+    </div>
+</div>
+</body>
+</html>
