@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        .blink_me:focus {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .validGreen:valid {
+            color : green;
+        }
+
+        .validGreen:invalid {
+            color : red;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <label for="f1">Je clignote si j'ai le focus</label>
+    <input type="text" class="blink_me" id="f1"/>
+    <br/>
+    <label for="f2">En vert je suis valide, en rouge invalide</label>
+    <input type="text" class="validGreen" id="f2" pattern="\d+" placeholder="saisir un nombre"/>
+</form>
+</body>
+</html>

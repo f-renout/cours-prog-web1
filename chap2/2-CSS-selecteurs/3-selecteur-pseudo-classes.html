@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        ul {
+            color:white;
+            background-color: black;
+        }
+
+        /*le 1ere element*/
+        ul > li:first-child {
+            color: red;
+        }
+
+        /*le dernier element*/
+        ul > li:last-child {
+            color : lightblue;
+        }
+
+        /*les elements 3 6 9 ...*/
+        ul > li:nth-child(3n) {
+            color : green;
+        }
+
+        /*l'avant avant derniere element*/
+        ul > li:nth-last-child(3) {
+            color : yellow;
+        }
+
+        /*tous les elements pairs*/
+        ul > li:nth-child(even) {
+            border: 1px solid darkgray;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+</ul>
+</body>
+</html>

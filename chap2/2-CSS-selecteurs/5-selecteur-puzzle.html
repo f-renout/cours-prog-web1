@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <style>
+        ul {
+            font-size: 0;
+            white-space: nowrap;
+            border: 1px solid red;
+            padding: 0;
+        }
+        li {
+            font-size: 14px;
+            display: inline-block;
+            background-color: darkgray;
+        }
+        li:nth-child(even) {
+            background-color: lightblue;
+        }
+        li:first-child:nth-last-child(4),
+        li:first-child:nth-last-child(4) ~li {
+            width : 25%
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+</body>
+</html>
