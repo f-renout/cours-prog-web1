@@ -1,0 +1,35 @@
+.content {
+    width: 65%;
+    padding: 1em 1%;
+    background-color: lightgrey;
+    border: 3px solid black;
+}
+.menufixe {
+    position: absolute;
+    top: 1em;
+    right: 2%;
+    background-color: antiquewhite;
+    border: 1px solid gray;
+    padding: 1em;
+    width: 18%;
+    z-index: 2;
+}
+html>body .menufixe {
+    position: fixed;
+}
+.menuabsolu {
+    position: absolute;
+    top: 15em;
+    right: 1%;
+    padding: 1em;
+    width: 20%;
+    background-color: #f5f8fc;
+    border: 3px solid black;
+    z-index: 3;
+}
+
+.sticky {
+    position: sticky;
+    top : 0;
+    background-color: aqua;
+}
