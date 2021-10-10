@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link  rel="stylesheet" href="event.css">
+</head>
+<body>
+<div id="wrapper">
+    <div>
+        <input id="bouton" type="button" onclick="clickMe()" value="Apparition">
+    </div>
+    <div id="contenu" class="cache">Voila du texte qui apparait</div>
+</div>
+<div id="bas">
+    <input onmouseover="swap()" id="fin" type="button" class="houdini" value="Essaye de me cliquer dessus">
+</div>
+</body>
+<script>
+    var visible = false;
+    function clickMe() {
+        document.getElementById("contenu").classList.toggle("cache");
+        visible=!visible;
+        document.getElementById("bouton").value=visible?"Apparition":"Disparition";
+    }
+
+    function swap(){
+        let fin = document.getElementById("fin");
+        fin.classList.toggle("houdini");
+    }
+</script>
+</html>
