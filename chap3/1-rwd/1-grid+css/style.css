@@ -6,7 +6,7 @@
     /*on laisse 16px entre les 2 cols*/
     grid-gap: 16px;
     background-color: lightgrey;
-    min-height: 50%;
+    min-height: 50vh;
     padding: 5px;
 }
 
