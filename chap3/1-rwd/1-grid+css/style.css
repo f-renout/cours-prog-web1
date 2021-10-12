@@ -1,18 +1,24 @@
 .wrapper {
+    /*on utilise un grid layout*/
     display: grid;
+    /*la 1ere col fait 200 pixels l'autre prend la place restante*/
     grid-template-columns: 200px 1fr;
+    /*on laisse 16px entre les 2 cols*/
     grid-gap: 16px;
     background-color: lightgrey;
     min-height: 50%;
     padding: 5px;
 }
 
+/*tous les enfants de wrapper*/
 .wrapper > * {
     background-color: white;
 }
 
 aside {
+    /*layout flexbox*/
     display:flex;
+    /*affichage en colonne*/
     flex-direction: column;
     max-height: 90%;
     overflow: auto;
