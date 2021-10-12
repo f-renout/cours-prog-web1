@@ -21,7 +21,7 @@
     function clickMe() {
         document.getElementById("contenu").classList.toggle("cache");
         visible=!visible;
-        document.getElementById("bouton").value=visible?"Apparition":"Disparition";
+        document.getElementById("bouton").value=!visible?"Apparition":"Disparition";
     }
 
     function swap(){
