@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">     <!--    <tema charset="UTF-8">-->
+    <title>Voilà une page de test</title>
+    <link rel="stylesheet" href="event.css"><!--<link rel="stylesheet" href=event.css>-->
+</head>
+<div id="wrapper">
+    <div>
+        <input id="bouton" type="bouton" onclick="clickMe()"
+               value="Apparition" style="font-weight: bold"/>
+    </div>
+    <div id="contenu" class="cache">Voilà du texte qui apparait</div>
+</div>
+<div id="bas">
+    <input onmouseover="swap()" id="fin" type="button"
+           class="houdini;autreclasse;troisiemeclasse"
+           value="Essaye de me cliquer dessus"/>
+</div>
+<script>
+    const visible=false;
+    function clickMe(){
+        document.getElementById("contenu").classList.toggle("cache")
+        visible!=visible
+        document.getElementById("bouton").value=!visible?"Apparition":"Disparition";
+    }
+
+    function swap{
+        let fin=document.getElementById("fin")
+        fin.classList.toggle("houdini")
+    }
+</script>
+</html>
