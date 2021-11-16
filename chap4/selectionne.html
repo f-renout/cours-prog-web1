@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma première page avec du style</title>
+</head>
+
+<body>
+
+<!-- Menu de navigation du site -->
+<ul class="navbar">
+    <li><a href="reflexions.html">Réflexions</a>
+    <li><a href="liens.html">Liens</a>
+</ul>
+
+<!-- Contenu principal -->
+<h1>Une petite page</h1>
+<input type="button" onclick ="select1()" value="1ere methode">
+<input type="button" onclick ="select2()" value="2eme méthode">
+
+<p>Bienvenue sur ma page</p>
+
+</body>
+</html>
+<script>
+    function select1(){
+        document.querySelector("[href='liens.html']").textContent="modifié par la méthode 1"
+    }
+    function select2(){
+        document.getElementsByClassName("navbar")[0].childNodes[2].firstChild.textContent="modifié par la méthode 2"
+    }
+</script>
+

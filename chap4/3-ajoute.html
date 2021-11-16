@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+</head>
+<body>
+<header>entête</header>
+<main>
+    <nav id="navig">
+        <!--    partie navigation-->
+        <a onclick="ajoute()">lien1</a>
+        <a>lien2</a>
+    </nav>
+    <article>
+        contenu d'un article
+    </article>
+</main>
+<footer>pied de page</footer>
+</body>
+<script>
+    var i = 0;
+    function ajoute(){
+        let toAdd = document.createElement("div");
+        toAdd.appendChild(document.createTextNode("Et voila du texte ajouté pour la "+(++i)+"eme fois"));
+        document.getElementsByTagName("article")[0].appendChild(toAdd);
+    }
+</script>
+</html>
+
