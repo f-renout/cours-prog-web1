@@ -1,0 +1,11 @@
+{
+  "marque": "Nokia",
+  "modele": "3610",
+  "appareilPhoto": false,
+  "batterie": {
+    "amperage": 1000,
+    "autonomieVeille": 170,
+    "autonomieParole": 3.5
+  },
+  "anneeFabrication": 2002
+}

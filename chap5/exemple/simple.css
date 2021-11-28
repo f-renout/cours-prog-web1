@@ -1,0 +1,17 @@
+#result div:nth-child(odd){
+    background-color: lightgrey;
+}
+
+.conges{
+    display: flex
+}
+
+.description{
+    width: 30%
+}
+.dateDebut{
+    width: 30%
+}
+.dateFin{
+    width: 30%
+}

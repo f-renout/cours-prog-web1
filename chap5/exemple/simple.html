@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Un petit exemple</title>
+    <link rel="stylesheet" href="simple.css"/>
+</head>
+<body>
+<div id="requete">
+    <div>
+        <label for="academie">Academie</label>
+        <select id="academie">
+            <option value="Besançon">Besançon(Zone A)</option>
+            <option value="Strasbourg">Strasbourg(Zone B)</option>
+            <option value="Toulouse">Toulouse(Zone C)</option>
+        </select>
+    </div>
+    <div>
+        <label for="annee">Annee scolaire</label>
+        <select id="annee">
+            <option value="2020-2021">2020-2021</option>
+            <option value="2021-2022">2021-2022</option>
+            <option value="2022-2023">2022-2023</option>
+        </select>
+    </div>
+    <button onclick="parser()">Chercher</button>
+</div>
+<div id="result"></div>
+</body>
+<script type="text/javascript" src="parser.js"/>
