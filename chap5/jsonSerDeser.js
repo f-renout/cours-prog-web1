@@ -40,7 +40,7 @@ ${batterie.pourcentage()}
 }
 
 const batterie = new Batterie(1000, 170, 3.5);
-const tel = new Telephone('nokia','3910', 'oui', batterie, 2002);
+const tel = new Telephone('nokia','3910', true, batterie, 2002);
 console.log(tel.status());
 
 const jsonString = JSON.stringify(tel)
