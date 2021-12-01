@@ -53,6 +53,7 @@ console.log(obj)
 
 var tel1 = Object.assign(new Telephone(), obj);
 console.log(tel1.status())
+//mettre le this
 
 tel1.batterie = Object.assign(new Batterie(), obj.batterie)
 console.log(tel1.status())
