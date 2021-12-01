@@ -11,7 +11,7 @@ class Batterie {
 
     pourcentage(){
         return `autonomie max : ${this.autonomieVeille}
-        il me reste ${getRandomInt(101)} % de batterie disponible`
+il me reste ${getRandomInt(101)} % de batterie disponible`
     }
 
 }
@@ -25,13 +25,17 @@ class Telephone {
         this.anneeFabrication = anneeFabrication;
     }
 
-    //ACHTUNG
     status(){
-        return `
-        mar: ${this.marque}
-        mémoire ${getRandomInt(1000)} photos
-        ${batterie.pourcentage()}
-        `
+        return `  _________ __          __                
+ /   _____//  |______ _/  |_ __ __  ______
+ \\_____  \\\\   __\\__  \\\\   __\\  |  \\/  ___/
+ /        \\|  |  / __ \\|  | |  |  /\\___ \\ 
+/_______  /|__| (____  /__| |____//____  >
+        \\/           \\/                \\/ 
+marque: ${this.marque}
+mémoire ${getRandomInt(1000)} photos
+${batterie.pourcentage()}
+==========================================`
     }
 }
 
@@ -44,7 +48,7 @@ console.log(jsonString)
 
 const obj = JSON.parse(jsonString)
 console.log(obj)
-obj.status();
+// obj.status();
 
 
 var tel1 = Object.assign(new Telephone(), obj);
